@@ -320,17 +320,6 @@
     justify-content: center;
     gap: 64px 24px;
   }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .hero-section {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office-tab@2x.jpg);
-  }
   /* Customers*/
 
   .customers-list {
@@ -339,12 +328,14 @@
   .customers-link-icon {
     width: 168px;
   }
+
   /* footer+subscribe-form */
   .footer-wrap {
     display: flex;
     flex-wrap: wrap;
     gap: 72px 24px;
     padding-left: 108px;
+    /* margin-left: 108px; */
   }
 
   .footer-text-first {
@@ -373,7 +364,7 @@
     text-align: start;
   }
   .subscribe-footer-input {
-    width: 264px;
+    max-width: 264px;
   }
   .subscribe-btn {
     margin-left: 0;
@@ -381,6 +372,17 @@
   .modal {
     max-width: none;
     width: 408px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tab@2x.jpg);
   }
 }
 /* used style for desktop*/
@@ -457,7 +459,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 0;
-    padding-left: 0;
+    padding-left: 15px;
   }
   .subscribe-form {
     width: 453px;
