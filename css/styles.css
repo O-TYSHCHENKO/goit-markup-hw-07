@@ -451,6 +451,7 @@ img {
 
 .subscribe-footer-input {
   width: 100%;
+  max-width: 396px;
   height: 40px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -459,6 +460,9 @@ img {
   color: #8e8f99;
   padding-left: 16px;
   background-color: transparent;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 .subscribe-footer-input::placeholder {
   font-weight: 400;

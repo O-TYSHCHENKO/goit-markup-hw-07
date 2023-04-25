@@ -365,6 +365,8 @@
   }
   .subscribe-footer-input {
     max-width: 264px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .subscribe-btn {
     margin-left: 0;
